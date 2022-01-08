@@ -1,17 +1,138 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\GameSystem\InputImpl\InputInvoker.cpp">
+      <Filter>GameSystem\Input\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameSystem\InputImpl\InputUpdater.cpp">
+      <Filter>GameSystem\Input\Impl</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameSystem\Input.cpp">
+      <Filter>GameSystem\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameSystem\MainLoop.cpp">
+      <Filter>GameSystem\MainLoop</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameSystem\Time.cpp">
+      <Filter>GameSystem\Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameSystem\Texture.cpp">
+      <Filter>GameSystem\Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameSystem\Invoker.cpp">
+      <Filter>GameSystem\Invoker</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\GameSystem\Scene.cpp">
+      <Filter>GameSystem\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\Title.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scene\InGame.cpp">
+      <Filter>Scene</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="GameSystem">
+      <UniqueIdentifier>{0af68e16-2ea9-4e07-8865-8be20730c50c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{d9856780-03fc-4a56-92a2-e0cbfa7b0420}</UniqueIdentifier>
     </Filter>
-    <Filter Include="リソース ファイル">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Definition">
+      <UniqueIdentifier>{cd880dea-cabc-4963-91df-b023509dcdee}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Other">
+      <UniqueIdentifier>{ef0ee461-f357-4b53-ac45-3b786f66f080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\Input">
+      <UniqueIdentifier>{839a508c-3c4b-403b-bfc4-f2d67b86bcbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\Input\Impl">
+      <UniqueIdentifier>{d1a16b19-4dcd-4d49-81f0-588584f2a50a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\MainLoop">
+      <UniqueIdentifier>{fb0e1cd7-c6b6-4107-ac0e-5b2469c4fd34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\Time">
+      <UniqueIdentifier>{866deaf5-fb69-41cd-b400-27bf190502d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\Texture">
+      <UniqueIdentifier>{38f9ddf3-804b-4a86-baa9-6415eed00ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\Invoker">
+      <UniqueIdentifier>{29cd8880-1d68-4a9c-9251-065ceb57eb34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\Scene">
+      <UniqueIdentifier>{e23558c6-3bad-43cb-806a-f61668b56975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{ffb8603e-5ac5-4a3d-a457-49815a76bd28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Utility\Vector2.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utility\Accessor.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Definition\Concepts.hpp">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utility\Mathematics.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utility\Utility.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Definition\Exception.hpp">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utility\Singleton.hpp">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameSystem\Input.hpp">
+      <Filter>GameSystem\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameSystem\InputImpl\InputInvoker.hpp">
+      <Filter>GameSystem\Input\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameSystem\InputImpl\InputUpdater.hpp">
+      <Filter>GameSystem\Input\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameSystem\InputImpl\InputDef.hpp">
+      <Filter>GameSystem\Input\Impl</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameSystem\MainLoop.hpp">
+      <Filter>GameSystem\MainLoop</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameSystem\Time.hpp">
+      <Filter>GameSystem\Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameSystem\Texture.hpp">
+      <Filter>GameSystem\Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameSystem\Invoker.hpp">
+      <Filter>GameSystem\Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\GameSystem\Scene.hpp">
+      <Filter>GameSystem\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\IScene.hpp">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\Title.hpp">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scene\InGame.hpp">
+      <Filter>Scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".clang-format">
+      <Filter>Other</Filter>
+    </None>
   </ItemGroup>
 </Project>
